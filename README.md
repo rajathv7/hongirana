@@ -73,9 +73,26 @@ The layouts of the building blocks of the PLL are constructed using magic tool. 
 ### Frequency divider
 ![FD_lay](FD_Layout.jpg)
 ### Multiplexer 
+The multiplexer comes in handy while testing the PLL. Either the output of the VCO could be given or an independent clock signal can be given for testing purposes.
 ![mux_lay](MUX_Layout.jpg)
 
+The overall layout of the PLL looks thus:
+![PLL_lay](PLL_Layout.jpg)
+
 ## Post-Layout Simulation
+Once the layouts are ready in magic, we can extract the parasitic resistances and capacitances. The following are the commands to be typed in the magic konsole interface:
+extract cthresh 0 rthresh 0 // this command set the threshold values of R and C to be extracted as zero, so that any finite R and C is reflected in the extraction
+ext2spice                   // this command converts the extracted netlist into spice format so that it can be simulated using ngspice
+We need to make sure that the scale factor is correctly set in the file which has the parasitics extracted.
+Once this spice file is ready, we can proceed to perform post-layout simulation using ngspice by invoking it at a terminal as done previously.
+
+The post-layout simulations of the different blocks are as follows:
+### Phase-frequency detector
+### VCO
+### Frequency divider
+### Complete PLL
+
+
 
 ## System on-Chip as carrier for PLL
 
