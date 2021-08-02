@@ -6,6 +6,15 @@ The Phase-Locked Loop (PLL) is one of the most essential analog block in any int
 
 ## Block Diagram of PLL
 
-![PLL Block Diagram](PLL_blk.png)
+![PLL Block Diagram](PLL_blk.jpg)
 
-The block diagram of the PLL shown above consists of a 
+The block diagram of the PLL shown above consists of the following blocks:
+1. Phase (or Phase-Frequency) Detector
+2. Charge Pump
+3. Loop filter
+4. Voltage Controlled Oscillator
+5. Optionally, a frequency divider
+
+### Phase (or Phase-Frequency) Detector
+The first and important block of the PLL is a phase detector which compares the phases of the reference signal (typically a crystal) and the output of the VCO (or that of the frequency divider) and gives out an output voltage whose average value must be proportional to the phase difference between the two signals compared. This is illustrated in the figure below.
+![PD_block_diagram](PD_blk.png)
