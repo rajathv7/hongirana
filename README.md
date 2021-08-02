@@ -51,8 +51,11 @@ A simple counter can function as a frequency divider. But here the following sim
 ![FD](Freq_Divider_schematic.png)
 
 ## Pre-Layout Simulation
-For simulation of the circuits using ngspice, the netlist of the schematic needs to be written. Here is a snippet of the netlist of the phase-frequency detector circuit.
+For simulation of the circuits using ngspice, the netlist of the schematic needs to be written. Here is a snippet of the netlist of the phase-frequency detector circuit. The file is edited so as to make the phase difference between the reference signal and the frequency divider output signal to be 0.25ns.
 ![PFD](nano_text_editor.png)
+The ngspice is invoked at the command prompt as shown below:
+![simulation1](proof_of_lab_work.png)
+
 ## Layout
 
 ## Post-Layout Simulation
