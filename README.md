@@ -91,13 +91,12 @@ The post-layout simulations of the different blocks are as follows:
 When the output clock signal lags the reference signal:
 ![PFD_postL](PFD_PostLay_Down.jpg)
 ### VCO
+For a control voltage of 0.6 V, the time period of the VCO output is about 180 ns.
 ![VCO_postL](VCO_PostLay_0v6.jpg)
 ### Frequency divider
 ![FD_postL](FD_PostLay.jpg)
 ### Complete PLL
 ![PLL_postL](postlay100mhz295fFfullpicture.jpg)
-
-
 
 ## System on-Chip as carrier for PLL
 
