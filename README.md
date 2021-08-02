@@ -6,6 +6,6 @@ The Phase-Locked Loop (PLL) is one of the most essential analog block in any int
 
 ## Block Diagram of PLL
 
-![PLL Block Diagram](PLL_Blk.png)
+![PLL Block Diagram](PLL_blk.png)
 
 The block diagram of the PLL shown above consists of a 
