@@ -51,7 +51,8 @@ A simple counter can function as a frequency divider. But here the following sim
 ![FD](Freq_Divider_schematic.png)
 
 ## Pre-Layout Simulation
-
+For simulation of the circuits using ngspice, the netlist of the schematic needs to be written. Here is a snippet of the netlist of the frequency divider circuit.
+![Freq_Div_cir]()
 ## Layout
 
 ## Post-Layout Simulation
