@@ -61,7 +61,7 @@ The result of this simulation is shown in the following plot. It can be noted th
 
 The simulation results of the other blocks of the PLL are as follows:
 ### Charge pump
-Even though transistors in the lower technology nodes are nominally turned off, still they allow a very small current to pass through them, called leakage current. Here we simulate the output voltage of the charge pump when both the input signals UP and DOWN are LOW. The total voltage is found to be 
+Even though transistors in the lower technology nodes are nominally turned off, still they allow a very small current to pass through them, called leakage current. Here we simulate the output voltage of the charge pump when both the input signals UP and DOWN are LOW. The total voltage due to leakage is found to be 40 uV for a duration of 1 us.
 ![CP_leakage](CP_PreLay_Leakage.jpg)
 Similarly, here are the simulation results when the UP signal is always HIGH and the DOWN signal is always LOW:
 ![CP_PreLay_UP](CP_PreLay_Charge.jpg)
