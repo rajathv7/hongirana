@@ -23,4 +23,4 @@ It is easy to see that a simple XOR gate can perform this function as shown in t
 Therefore, an improved version typically called a Phase-Frequency detector is designed based on the following finite-state machine. Here, the 'UP' signal means that the output frequency must be increased while the 'DOWN' signal means that the output frequency must be reduced.
 ![PFD_FSM](PFD_FSM.png)
 The state transitions in the FSM are seen to happen at the falling edges of the reference and output signals. Therefore, this idea can be implemented by using two falling edge-triggered D FF's as shown below.
-![PFD_idea]()
+![PFD_idea](PFD_basic_idea.png)
