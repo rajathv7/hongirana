@@ -100,8 +100,11 @@ The overall layout of the PLL looks thus:
 
 ## Post-Layout Simulation
 Once the layouts are ready in magic, we can extract the parasitic resistances and capacitances. The following are the commands to be typed in the magic konsole interface:
+
 extract cthresh 0 rthresh 0 // this command set the threshold values of R and C to be extracted as zero, so that any finite R and C is reflected in the extraction
+
 ext2spice                   // this command converts the extracted netlist into spice format so that it can be simulated using ngspice
+
 We need to make sure that the scale factor is correctly set in the file which has the parasitics extracted.
 Once this spice file is ready, we can proceed to perform post-layout simulation using ngspice by invoking it at a terminal as done previously.
 
