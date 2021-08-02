@@ -48,7 +48,7 @@ The voltage controlled oscillator (VCO) consists of an odd-number of 'current-st
 
 ### Frequency Divider
 A simple counter can function as a frequency divider. But here the following simple circuit is used to implement a frequency divider.
-![FD](FD_schematic.png)
+![FD](Freq_Divider_schematic.png)
 
 ## Pre-Layout Simulation
 
