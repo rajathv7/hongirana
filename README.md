@@ -98,7 +98,7 @@ For a control voltage of 0.6 V, the time period of the VCO output is about 180 n
 ### Complete PLL
 ![PLL_postL](postlay100mhz295fFfullpicture.jpg)
 
-## System on-Chip as carrier for PLL
+## System on-Chip Template as carrier for PLL
 eFabless has come up with an SoC (System on-Chip) template, called Caravel, which acts as a carrier for the PLL thus designed. The block diagram of the Caravel SoC is shown below. The light pink area on the SoC is the location where we can instantiate our PLL layout. A screenshot of the PLL placed inside the Caravel is also shown.
 ![CaravelSoC](CaravelSoCTemplate.jpg)
 ![PLLinCaravel](PLL_in_caravel.jpg)
