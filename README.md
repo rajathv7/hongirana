@@ -24,3 +24,8 @@ Therefore, an improved version typically called a Phase-Frequency detector is de
 ![PFD_FSM](PFD_FSM.png)
 The state transitions in the FSM are seen to happen at the falling edges of the reference and output signals. Therefore, this idea can be implemented by using two falling edge-triggered D FF's as shown below.
 ![PFD_idea](PFD_basic_idea.png)
+Since this circuit has the limitation of finite dead zone, very small phase differences between the reference and output signals will be missed by this circuit. As a result, the following improvised circuit is used for phase detection.
+![Practial_PFD](practical_PFD.png)
+
+### Charge Pump
+Charge pump is the second block in the PLL which takes the UP and DOWN output of the phase detector and generates an output voltage proportional to the difference between the ON-times of the UP and DOWN signals.
