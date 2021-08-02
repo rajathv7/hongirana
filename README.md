@@ -18,3 +18,9 @@ The block diagram of the PLL shown above consists of the following blocks:
 ### Phase (or Phase-Frequency) Detector
 The first and important block of the PLL is a phase detector which compares the phases of the reference signal (typically a crystal) and the output of the VCO (or that of the frequency divider) and gives out an output voltage whose average value must be proportional to the phase difference between the two signals compared. This is illustrated in the figure below.
 ![PD_block_diagram](PD_blk.png)
+It is easy to see that a simple XOR gate can perform this function as shown in the figure below, but it is easy to see that an XOR gate will not be able to distinguish whether the output signal lags the reference signal or leads it.
+![PD_XOR](PD_xor.png)
+Therefore, an improved version typically called a Phase-Frequency detector is designed based on the following finite-state machine. Here, the 'UP' signal means that the output frequency must be increased while the 'DOWN' signal means that the output frequency must be reduced.
+![PFD_FSM](PFD_FSM.png)
+The state transitions in the FSM are seen to happen at the falling edges of the reference and output signals. Therefore, this idea can be implemented by using two falling edge-triggered D FF's as shown below.
+![PFD_idea]()
