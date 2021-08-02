@@ -88,9 +88,14 @@ Once this spice file is ready, we can proceed to perform post-layout simulation 
 
 The post-layout simulations of the different blocks are as follows:
 ### Phase-frequency detector
+When the output clock signal lags the reference signal:
+![PFD_postL](PFD_PostLay_Down.jpg)
 ### VCO
+![VCO_postL](VCO_PostLay_0v6.jpg)
 ### Frequency divider
+![FD_postL](FD_PostLay.jpg)
 ### Complete PLL
+![PLL_postL](postlay100mhz295fFfullpicture.jpg)
 
 
 
