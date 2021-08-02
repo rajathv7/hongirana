@@ -32,7 +32,8 @@ Charge pump is the second block in the PLL which takes the UP and DOWN output of
 ![Charge_pump](CP_schematic.png)
 
 ### Loop filter
-The loop filter essentially smoothens the output of the charge pump so that the VCO output does not fluctuate too much. 
+The loop filter essentially smoothens the output of the charge pump so that the VCO output does not fluctuate too much. Typically a second-order filter as shown below is used. In order to simplify the conditions to stabilize the loop, C2 is typically chosen to be one-fifth to one-tenth of Cp.
+![Loop filter](loop_filter.png)
 
 ### Voltage Controlled Oscillator (VCO)
 
