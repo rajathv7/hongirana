@@ -65,15 +65,15 @@ In a similar manner, the different blocks of the PLL are constructed and the fin
 ## Layout
 The layouts of the building blocks of the PLL are constructed using magic tool. The snapshots of the various building blocks of the PLL are as follows:
 ### Phase-frequency detector
-![PFD_lay](PFD_layout.jpg)
+![PFD_lay](PFD_Layout.jpg)
 ### Charge pump
-![cp_lay](CP_layout.jpg)
+![cp_lay](CP_Layout.jpg)
 ### VCO
-![vco_lay](VCO_layout.jpg)
+![vco_lay](VCO_Layout.jpg)
 ### Frequency divider
-![FD_lay](FD_layout.jpg)
+![FD_lay](FD_Layout.jpg)
 ### Multiplexer 
-![mux_lay](MUX_layout.jpg)
+![mux_lay](MUX_Layout.jpg)
 
 ## Post-Layout Simulation
 
