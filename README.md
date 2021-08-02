@@ -61,17 +61,17 @@ The result of this simulation is shown in the following plot. It can be noted th
 
 The simulation results of the other blocks of the PLL are as follows:
 ### Charge pump
-Even though transistors in the lower technology nodes are nominally turned off, still they allow a very small current to pass through them, called leakage current. Here we simulate the output voltage of the charge pump when both the input signals UP and DOWN are LOW.
+Even though transistors in the lower technology nodes are nominally turned off, still they allow a very small current to pass through them, called leakage current. Here we simulate the output voltage of the charge pump when both the input signals UP and DOWN are LOW. The total voltage is found to be 
 ![CP_leakage](CP_PreLay_Leakage.jpg)
 Similarly, here are the simulation results when the UP signal is always HIGH and the DOWN signal is always LOW:
 ![CP_PreLay_UP](CP_PreLay_Charge.jpg)
 
 ### Phase-frequency detector
-The phase-frequency detector output when the reference signal leads the frequency divider output, the UP signal is HIGH for the duration when there is phase mismatch while the DOWN signal is always LOW, as obtained below:
+The phase-frequency detector output when the reference signal leads the frequency divider output is shown below. The UP signal is seen to be HIGH for the duration when there is phase mismatch while the DOWN signal is always LOW.
 ![Up](PD_PreLay_Up.jpg)
 
 ### VCO
-The VCO output is found to have a period of oscillation of thus when the control voltage is 0.6 V.
+The VCO output is found to have a period of oscillation of about 40 ns when the control voltage is 0.6 V.
 ![VCO_pre](VCO_PreLay_0v6.jpg)
 
 ### Frequency divider
