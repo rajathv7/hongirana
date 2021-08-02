@@ -56,7 +56,19 @@ For simulation of the circuits using ngspice, the netlist of the schematic needs
 The ngspice is invoked at the command prompt as shown below:
 ![simulation1](proof_of_lab_work.png)
 
+The result of this simulation is shown in the following plot. It can be noted that due to the small phase difference between the clock signals being compared, the UP signal is very narrow and DOWN signal is always LOW.
+![simulation_result](PFD_dead_zone_simulation.png)
+
+In a similar manner, the different blocks of the PLL are constructed and the final simulation is run using the model file in TT corner. The simulation results thus obtained is shown below.
+![PLL_simulation](PLL_full_simulation.png)
+
 ## Layout
+The layouts of the building blocks of the PLL are constructed using magic tool. The snapshots of the various building blocks of the PLL are as follows:
+### Phase-frequency detector
+### Charge pump
+### VCO
+### Frequency divider
+### Multiplexer 
 
 ## Post-Layout Simulation
 
