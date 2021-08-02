@@ -75,7 +75,7 @@ The VCO output is found to have a period of oscillation of about 40 ns when the 
 ![VCO_pre](VCO_PreLay_0v6.jpg)
 
 ### Frequency divider
-The frequency divider is obtained as follows:
+The frequency divider simulation result is obtained as follows. Clearly, the output is seen to be at half the frequency of the input.
 ![fd](FD_PreLay.jpg)
 
 In a similar manner, the different blocks of the PLL are constructed and the final simulation is run using the model file in TT corner. The simulation results thus obtained is shown below.
