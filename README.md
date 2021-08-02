@@ -59,8 +59,27 @@ The ngspice is invoked at the command prompt as shown below:
 The result of this simulation is shown in the following plot. It can be noted that due to the small phase difference between the clock signals being compared, the UP signal is very narrow and DOWN signal is always LOW.
 ![simulation_result](PFD_dead_zone_simulation.png)
 
+The simulation results of the other blocks of the PLL are as follows:
+### Charge pump
+Even though transistors in the lower technology nodes are nominally turned off, still they allow a very small current to pass through them, called leakage current. Here we simulate the output voltage of the charge pump when both the input signals UP and DOWN are LOW.
+![CP_leakage](CP_PreLay_Leakage.jpg)
+Similarly, here are the simulation results when the UP signal is always HIGH and the DOWN signal is always LOW:
+![CP_PreLay_UP](CP_PreLay_Charge.jpg)
+
+### Phase-frequency detector
+The phase-frequency detector output when the reference signal leads the frequency divider output, the UP signal is HIGH for the duration when there is phase mismatch while the DOWN signal is always LOW, as obtained below:
+![Up](PD_PreLay_Up.jpg)
+
+### VCO
+The VCO output is found to have a period of oscillation of thus when the control voltage is 0.6 V.
+![VCO_pre](VCO_PreLay_0v6.jpg)
+
+### Frequency divider
+The frequency divider is obtained as follows:
+![fd](FD_PreLay.jpg)
+
 In a similar manner, the different blocks of the PLL are constructed and the final simulation is run using the model file in TT corner. The simulation results thus obtained is shown below.
-![PLL_simulation](PLL_full_simulation.png)
+![PLL_simulation](100Mhzzoomin.png)
 
 ## Layout
 The layouts of the building blocks of the PLL are constructed using magic tool. The snapshots of the various building blocks of the PLL are as follows:
