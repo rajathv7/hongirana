@@ -79,7 +79,7 @@ The frequency divider is obtained as follows:
 ![fd](FD_PreLay.jpg)
 
 In a similar manner, the different blocks of the PLL are constructed and the final simulation is run using the model file in TT corner. The simulation results thus obtained is shown below.
-![PLL_simulation](100Mhzzoomin.png)
+![PLL_simulation](100Mhzzoomin.jpg)
 
 ## Layout
 The layouts of the building blocks of the PLL are constructed using magic tool. The snapshots of the various building blocks of the PLL are as follows:
