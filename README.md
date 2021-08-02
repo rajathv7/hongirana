@@ -44,7 +44,8 @@ The loop filter essentially smoothens the output of the charge pump so that the 
 
 ### Voltage Controlled Oscillator (VCO)
 The voltage controlled oscillator (VCO) consists of an odd-number of 'current-starved' inverters connected in a ring, as shown below. The output voltage of the loop filter is connected to the VCO with the output voltage controlling the current of each of inverter thereby controlling the delay of each inverter; therefore changing the frequency of the output signal of the VCO.
-![VCO]()
+![VCO](VCO_schematic.png)
+
 ### Frequency Divider
 
 ## Pre-Layout Simulation
