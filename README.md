@@ -125,4 +125,5 @@ eFabless has come up with an SoC (System on-Chip) template, called Caravel, whic
 ![CaravelSoC](CaravelSoCTemplate.jpg)
 ![PLLinCaravel](PLL_in_caravel.jpg)
 
-
+## Acknowledgment
+This journal is created to document the learnings of the training workshop conducted by Lakshmi Sathi and most of the material is sourced from her github profile: https://github.com/lakshmi-sathi/avsdpll_1v8
